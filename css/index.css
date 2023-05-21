@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("./components/header.css");
 
-*::after, *::before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -13,16 +15,21 @@ body {
   line-height: 1.5;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .bg-primary {
-  background-color: #272A31 !important;
+  background-color: #272a31 !important;
 }
 
 .bg-secondary {
-  background-color: #EC5242 !important;
+  background-color: #ec5242 !important;
 }
 
 .bg-tertiary {
-  background-color: #D3D3D3 !important;
+  background-color: #d3d3d3 !important;
 }
 
 .text-primary {
@@ -35,10 +42,4 @@ body {
 
 .text-tertiary {
   color: #7f8cff !important;
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 70rem;
-  }
 }
