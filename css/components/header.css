@@ -1,18 +1,18 @@
 .navbar-toggler {
-  background: none !important;
+    background: none !important;
 }
 
 .navbar-nav li:not(:last-child) {
-  margin-right: 24px;
+    margin-right: 24px;
 }
 
 .nav-item-btn {
-  border: 4px solid #ec5242;
-  background-color: #fff !important;
-  border-radius: 0 !important;
-  color: #ec5242;
+    border: 4px solid #EC5242;
+    background-color: #fff !important;
+    border-radius: 0 !important;
+    color: #EC5242;
 }
 
 .nav-item-btn:hover {
-  color: #ec5242;
+    color: #EC5242;
 }
