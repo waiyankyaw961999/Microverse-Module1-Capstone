@@ -3,6 +3,7 @@
 @import url("./components/hero-section.css");
 @import url("./components/program.css");
 @import url("./components/speaker-section.css"); 
+@import url("./components/partner-section.css");
 
 *::after,
 *::before {
