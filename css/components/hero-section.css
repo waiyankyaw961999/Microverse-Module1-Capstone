@@ -1,0 +1,17 @@
+
+.text-clip {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 18px;
+  background-image: url('../../assets/images/summit.jpg');
+  background-clip: text;
+  background-position: top center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.schedule-day {
+  font-weight: bold;
+  text-transform: uppercase;
+}
