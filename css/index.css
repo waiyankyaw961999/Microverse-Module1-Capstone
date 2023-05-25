@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:ital,wght@0,700;0,900;1,400&display=swap');
 @import url("./components/header.css");
+@import url("./components/main-programs.css");
 @import url("./components/hero-section.css");
 @import url("./components/program.css");
 @import url("./components/speaker-section.css"); 
-@import url("./components/partner-section.css");
 @import url("./components/about-summit.css");
 @import url("./components/footer.css");
 
@@ -65,9 +65,28 @@ a {
   font-size: 14px;
 }
 
+.title-h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
 .title-h2 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bolder;
   line-height: 100%;
 }
 
+
+
+@media only screen and (min-width: 991px) {
+  .title-h1 {
+    font-size: 63px;
+    font-weight: 900;
+  }
+  .title-h2 {
+    font-size: 60px;
+    font-weight: bolder;
+    line-height: 100%;
+  }
+  
+}

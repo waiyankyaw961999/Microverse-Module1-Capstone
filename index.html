@@ -21,8 +21,8 @@
     <link href="css/index.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="bg-primary">
-      <div class="top-bar d-flex justify-content-end container">
+    <header class="bg-primary shadow-lg">
+      <div class="top-bar w-75 justify-content-end container d-none d-md-flex">
         <ul class="list-unstyled list-group-horizontal list-group gap-3 py-1">
           <li>
             <a href="#facebook">
@@ -52,8 +52,15 @@
         </ul>
       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-lg">
-          <a class="navbar-brand d-none d-md-block" href="#">Navbar</a>
+        <div class="container-lg py-2">
+          <a class="navbar-brand text-center" href="#">
+            <img
+              width="130"
+              height="51"
+              src="assets/icons/nav-logo.png"
+              alt="nav-log"
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -69,9 +76,14 @@
             class="collapse navbar-collapse left-0"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <ul
+              class="navbar-nav position-relative mb-2 mb-lg-0 gap-4 text-center mt-md-0 mt-4"
+            >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/about.html"
                   >About</a
                 >
               </li>
@@ -98,129 +110,51 @@
       </nav>
     </header>
 
-    <section class="vh-100 d-flex align-items-center">
-      <img
-        class="position-absolute z-0 w-100 w-100 vh-100"
-        src="/assets/images/main_big.png"
-        alt="main image"
-      />
-      <div
-        class="position-relative container-lg mx-auto z-1 align-content-center d-flex flex-column"
-      >
-        <h3 class="text-secondary">"Welcome Technophiles"</h3>
-        <h2 class="text-clip">
-          CREATIVE COMMONS <br />
-          GLOBAL SUMMIT <br />2015
-        </h2>
-        <p class="w-75 lh-md">
+    <section id="hero-section" class="position-relative">
+      <div class="hero-section-bg"></div>
+      <div class="hero-body position-relative mx-auto z-1 align-content-center">
+        <div class="hero-title py-4">
+          <h3 class="text-secondary">"Welcome Technophiles"</h3>
+          <h1 class="text-clip title-h1">
+            CREATIVE COMMONS GLOBAL SUMMIT 2015
+          </h1>
+        </div>
+        <p
+          class="text-gray hero-desc lh-md py-4 px-3 border border-white border-4"
+        >
           A joyful celebration believing in the value of openness and sharing,
           creating a positive change with people from over 80 countries is
           taking place in October, in Korea.
         </p>
-        <div>
-          <h2 class="schedule-day">2015.10.15 (THU) ~ 17 (FRI)</h2>
-          <p>@ National Museum of Korea, Art Center Nabi and more</p>
+        <div class="mt-4 schedule">
+          <h3 class="schedule-day text-light-emphasis">
+            2015.10.15 (THU) ~ 17 (FRI)
+          </h3>
+          <p class="text-light-emphasis w-100">
+            @ National Museum of Korea, Art Center Nabi and more
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="main-program" class="bg-primary p-5">
-      <div class="mb-2 d-flex flex-column align-items-center w-100">
-        <h2 class="text-center text-white">Main Program</h2>
-        <span class="underline"></span>
-      </div>
-      <div class="d-flex justify-content-center mt-4 gap-1 position-relative">
-        <div
-          class="program-card card text-white bg-tertiary mb-3"
-          style="max-width: 18rem"
-        >
-          <div class="card-body d-flex flex-column align-items-center">
-            <img
-              class="w-50 h-50 position-relative"
-              src="assets/icons/program_icon_01.png"
-            />
-            <div class="text-center my-4">
-              <h3 class="text-secondary fs-4">Lecture</h3>
-              <p class="card-text mt-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
+    <section id="main-program" class="position-relative">
+      <div class="main-program-bg"></div>
+      <div class="main-program">
+        <div class="mb-2 d-flex flex-column align-items-center w-100">
+          <h2 class="text-center text-white">Main Program</h2>
+          <span class="underline"></span>
         </div>
         <div
-          class="program-card card bg-tertiary text-white bg-primary mb-3"
-          style="max-width: 18rem"
+          class="main-program-lists d-flex flex-wrap flex-md-nowrap justify-content-center mt-4 gap-1 position-relative px-md-0 px-4"
         >
-          <div class="card-body d-flex flex-column align-items-center">
-            <img
-              class="w-50 h-50 position-relative"
-              src="assets/icons/program_icon_02.png"
-            />
-            <div class="text-center my-4">
-              <h3 class="text-secondary fs-4">CC Exhibition</h3>
-              <p class="card-text mt-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
+          <!-- Main Program Lists -->
         </div>
-        <div
-          class="program-card card bg-tertiary text-white bg-primary mb-3"
-          style="max-width: 18rem"
-        >
-          <div class="card-body d-flex flex-column align-items-center">
-            <img
-              class="w-50 h-50 position-relative"
-              src="assets/icons/program_icon_03.png"
-            />
-            <div class="text-center my-4">
-              <h3 class="text-secondary fs-4">Forum</h3>
-              <p class="card-text mt-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
+        <div class="text-center mt-4">
+          <a
+            class="text-uppercase text-white text-center text-decoration-underline"
+            >See the whole program</a
+          >
         </div>
-        <div
-          class="program-card card bg-tertiary text-white bg-primary mb-3"
-          style="max-width: 18rem"
-        >
-          <div class="card-body d-flex flex-column align-items-center">
-            <img
-              class="w-50 h-50 position-relative"
-              src="assets/icons/program_icon_04.png"
-            />
-            <div class="text-center my-4">
-              <h3 class="text-secondary fs-4">Workshop</h3>
-              <p class="card-text mt-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="program-card card bg-tertiary text-white bg-primary mb-3"
-          style="max-width: 18rem"
-        >
-          <div class="card-body d-flex flex-column align-items-center">
-            <img
-              class="w-50 h-50 position-relative"
-              src="assets/icons/program_icon_05.png"
-            />
-            <div class="text-center my-4">
-              <h3 class="text-secondary fs-4">CC Ignite</h3>
-              <p class="card-text mt-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <a
-          class="text-uppercase text-white text-center text-decoration-underline"
-          >See the whole program</a
-        >
       </div>
     </section>
 
@@ -229,8 +163,8 @@
         <h2 class="text-center">Featured Speakers</h2>
         <span class="underline"></span>
       </div>
-      <div class="w-100">
-        <div class="row row-cols-2 mt-4 w-75 mx-auto">
+      <div class="w-100 mx-auto">
+        <div class="speakers row row-cols-md-2 mt-4 mx-auto">
           <div class="col">
             <div class="d-flex gap-4">
               <img
@@ -381,11 +315,11 @@
       class="d-flex container gap-4 py-5 justify-content-center align-items-center"
     >
       <div>
-        <img width="250" src="assets/icons/logo.png" alt="logo" />
+        <img class="footer-logo" src="assets/icons/footer-logo.png" alt="logo" />
       </div>
       <div class="footer-desc fw-bold fs-14">
         <span class="">2015 Creative Commons Korea. Some Rights Reserved.</span>
-        <p class="mt-4">
+        <p class="mt-4 d-none d-md-block">
           달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시
           2.0 대한민국 라이선스에 따라 이용할 수 있습니다. 자세한 이용기능
           내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 를
@@ -395,5 +329,6 @@
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>

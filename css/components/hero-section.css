@@ -1,9 +1,9 @@
-
 .text-clip {
-  font-size: 80px;
   text-transform: uppercase;
-  font-weight: bold;
+  line-height: 100%;
   letter-spacing: 18px;
+  background-size: 180px;
+  font-weight: 900;
   background-image: url('../../assets/images/orangebg.jpg');
   background-clip: text;
   background-position: top center;
@@ -12,6 +12,62 @@
 }
 
 .schedule-day {
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 900;
   text-transform: uppercase;
+}
+
+.hero-title {
+  width: 90%;
+  margin: auto;
+}
+
+.hero-section-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('../../assets/images/main_big.png');
+}
+
+.hero-body {
+  width: 100%;
+}
+
+.hero-desc {
+  background-color: #F8F8F8;
+  margin-top: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.schedule {
+  width: 90%;
+  margin: auto;
+}
+
+
+
+@media only screen and (min-width: 991px) {
+  .hero-body {
+    width: 75% !important;
+    padding-top: 91px;
+    padding-bottom: 118px;
+  }
+
+  .hero-title {
+    margin: 0;
+  }
+
+  .hero-desc {
+    margin: 0;
+  }
+
+  .schedule-day {
+    font-size: 40px;
+  }
+
+  .schedule {
+    margin: 0;
+  }
 }

@@ -1,3 +1,9 @@
+.navbar-brand {
+  text-align: center;
+  width: 20%;
+
+}
+
 .navbar-toggler {
   background: none !important;
 }
@@ -15,4 +21,22 @@
 
 .nav-item-btn:hover {
   color: #ec5242;
+}
+
+.active {
+  color: #ec5242 !important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+
+@media only screen and (min-width: 991px) {
+  .navbar-brand {
+    position: relative;
+    text-align: left;
+    width: 30%;
+  }
+ 
 }
